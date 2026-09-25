@@ -1,0 +1,221 @@
+{
+  "tool": {
+    "id": "osmolaridade-serica",
+    "title": "Osmolaridade sérica e gap osmolar",
+    "short": "Osmolaridade calculada, efetiva e gap osmolar",
+    "desc": "Calcule a osmolaridade sérica (com ureia, em mg/dL), a osmolaridade efetiva e o gap osmolar, com a contribuição do etanol, na suspeita de álcool tóxico.",
+    "lead": "Calcula a osmolaridade plasmática a partir de sódio, glicose e ureia; com a osmolalidade medida, o gap osmolar ajuda a detectar álcoois tóxicos e outros solutos não medidos.",
+    "spec": [
+      "medicina-de-emergencia",
+      "medicina-intensiva",
+      "nefrologia",
+      "endocrinologia-e-metabologia",
+      "clinica-medica"
+    ],
+    "fields": [
+      [
+        "na",
+        "Sódio",
+        "num",
+        {
+          "min": 100,
+          "max": 200,
+          "unit": "mEq/L",
+          "ph": "140"
+        }
+      ],
+      [
+        "glic",
+        "Glicose",
+        "num",
+        {
+          "min": 10,
+          "max": 2000,
+          "unit": "mg/dL",
+          "ph": "100"
+        }
+      ],
+      [
+        "ureia",
+        "Ureia",
+        "num",
+        {
+          "min": 5,
+          "max": 500,
+          "unit": "mg/dL",
+          "ph": "30"
+        }
+      ],
+      [
+        "etanol",
+        "Etanol sérico",
+        "num",
+        {
+          "min": 0,
+          "max": 800,
+          "unit": "mg/dL",
+          "ph": "0",
+          "opt": true
+        }
+      ],
+      [
+        "osm",
+        "Osmolalidade medida",
+        "num",
+        {
+          "min": 200,
+          "max": 500,
+          "unit": "mOsm/kg",
+          "ph": "290",
+          "opt": true
+        }
+      ]
+    ],
+    "formula": "<p><strong>Osmolaridade calculada</strong> = 2 × Na + glicose ÷ 18 + ureia ÷ 6 (+ etanol ÷ 3,7, se dosado). Com BUN no lugar da ureia, use BUN ÷ 2,8.</p><p><strong>Osmolaridade efetiva</strong> (tonicidade) = 2 × Na + glicose ÷ 18.</p><p><strong>Gap osmolar</strong> = osmolalidade medida − osmolaridade calculada.</p>",
+    "table": [
+      [
+        "Resultado",
+        "Interpretação"
+      ],
+      [
+        "Osmolaridade 275 a 295 mOsm/L",
+        "Faixa normal"
+      ],
+      [
+        "Gap osmolar ≤ 10",
+        "Normal"
+      ],
+      [
+        "Gap osmolar &gt; 10",
+        "Soluto não medido: metanol, etilenoglicol, isopropanol, etanol não dosado, manitol, glicina"
+      ]
+    ],
+    "tips": [
+      "Gap osmolar alto com acidose de ânion gap alto sugere intoxicação por metanol ou etilenoglicol: não espere a confirmação para iniciar o antídoto (fomepizol ou etanol) e discutir hemodiálise.",
+      "Na fase tardia, o álcool já foi metabolizado em ácidos: o gap osmolar cai e o ânion gap sobe. Gap normal não exclui a intoxicação.",
+      "A osmolalidade medida deve ser feita por abaixamento do ponto de congelamento; o método de pressão de vapor não detecta álcoois voláteis.",
+      "A ureia atravessa as membranas livremente: para tonicidade (hiponatremia, estado hiperosmolar), use a osmolaridade efetiva."
+    ],
+    "sources": [
+      [
+        "Kraut JA, Xing SX. Approach to the evaluation of a patient with an increased serum osmolal gap and high-anion-gap metabolic acidosis. Am J Kidney Dis, 2011.",
+        "https://doi.org/10.1053/j.ajkd.2011.05.018"
+      ],
+      [
+        "Purssell RA et al. Derivation and validation of a formula to calculate the contribution of ethanol to the osmolal gap. Ann Emerg Med, 2001.",
+        "https://doi.org/10.1067/mem.2001.119455"
+      ]
+    ],
+    "cases": [
+      [
+        "Na 140, glicose 90, ureia 30: 290 (normal)",
+        {
+          "na": 140,
+          "glic": 90,
+          "ureia": 30
+        },
+        {
+          "raw": {
+            "calc": 290,
+            "efetiva": 285
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Hiponatremia: Na 125, glicose 90, ureia 30: 260 (baixa)",
+        {
+          "na": 125,
+          "glic": 90,
+          "ureia": 30
+        },
+        {
+          "raw": {
+            "calc": 260
+          },
+          "level": "mid",
+          "verdict": "baixa"
+        }
+      ],
+      [
+        "Medida 320 com calculada 290: gap 30",
+        {
+          "na": 140,
+          "glic": 90,
+          "ureia": 30,
+          "osm": 320
+        },
+        {
+          "raw": {
+            "gap": 30
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Etanol 185 mg/dL explica o gap: calculada 342, medida 340, gap −2",
+        {
+          "na": 140,
+          "glic": 108,
+          "ureia": 36,
+          "etanol": 185,
+          "osm": 340
+        },
+        {
+          "raw": {
+            "calc": 342,
+            "gap": -2
+          },
+          "level": "low"
+        }
+      ]
+    ],
+    "batch": "urgencia",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "urgencia",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/urgencia.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 4,
+      "passed": 4,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 1,
+      "passed": 1,
+      "cases": [
+        {
+          "label": "Conversões mg/dL: 2×140+180/18+60/6=300",
+          "input": {
+            "na": 140,
+            "glic": 180,
+            "ureia": 60
+          },
+          "expected": {
+            "calc": 300,
+            "efetiva": 290
+          },
+          "status": "passed",
+          "failures": []
+        }
+      ]
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/urgencia.php",
+    "sha256": "b24f3a77383430c3f3463168e78e88341034b3108bd712f3613ae32672dc281c",
+    "bytes": 121059
+  },
+  "clinicalValidation": "not-performed"
+}

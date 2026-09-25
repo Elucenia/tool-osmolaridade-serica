@@ -1,0 +1,91 @@
+[
+  {
+    "label": "Na 140, glicose 90, ureia 30: 290 (normal)",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30
+    },
+    "expected": {
+      "raw": {
+        "calc": 290,
+        "efetiva": 285
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Hiponatremia: Na 125, glicose 90, ureia 30: 260 (baixa)",
+    "input": {
+      "na": 125,
+      "glic": 90,
+      "ureia": 30
+    },
+    "expected": {
+      "raw": {
+        "calc": 260
+      },
+      "level": "mid",
+      "verdict": "baixa"
+    },
+    "originalInput": {
+      "na": 125,
+      "glic": 90,
+      "ureia": 30
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Medida 320 com calculada 290: gap 30",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "osm": 320
+    },
+    "expected": {
+      "raw": {
+        "gap": 30
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "osm": 320
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Etanol 185 mg/dL explica o gap: calculada 342, medida 340, gap −2",
+    "input": {
+      "na": 140,
+      "glic": 108,
+      "ureia": 36,
+      "etanol": 185,
+      "osm": 340
+    },
+    "expected": {
+      "raw": {
+        "calc": 342,
+        "gap": -2
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "na": 140,
+      "glic": 108,
+      "ureia": 36,
+      "etanol": 185,
+      "osm": 340
+    },
+    "expandedZeroOptions": []
+  }
+]
