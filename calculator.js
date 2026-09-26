@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-osmolaridade-serica · Elucenia · https://github.com/Elucenia/tool-osmolaridade-serica
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"osmolaridade-serica","title":"Osmolaridade sérica e gap osmolar","fields":[["na","Sódio","num",{"min":100,"max":200,"unit":"mEq/L","ph":"140"}],["glic","Glicose","num",{"min":10,"max":2000,"unit":"mg/dL","ph":"100"}],["ureia","Ureia","num",{"min":5,"max":500,"unit":"mg/dL","ph":"30"}],["etanol","Etanol sérico","num",{"min":0,"max":800,"unit":"mg/dL","ph":"0","opt":true}],["osm","Osmolalidade medida","num",{"min":200,"max":500,"unit":"mOsm/kg","ph":"290","opt":true}]],"config":null,"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
