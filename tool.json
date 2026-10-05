@@ -5,6 +5,7 @@
     "short": "Osmolaridade calculada, efetiva e gap osmolar",
     "desc": "Calcule a osmolaridade sérica (com ureia, em mg/dL), a osmolaridade efetiva e o gap osmolar, com a contribuição do etanol, na suspeita de álcool tóxico.",
     "lead": "Calcula a osmolaridade plasmática a partir de sódio, glicose e ureia; com a osmolalidade medida, o gap osmolar ajuda a detectar álcoois tóxicos e outros solutos não medidos.",
+    "kind": "Calculadora",
     "spec": [
       "medicina-de-emergencia",
       "medicina-intensiva",
@@ -72,30 +73,6 @@
       ]
     ],
     "formula": "<p><strong>Osmolaridade calculada</strong> = 2 × Na + glicose ÷ 18 + ureia ÷ 6 (+ etanol ÷ 3,7, se dosado). Com BUN no lugar da ureia, use BUN ÷ 2,8.</p><p><strong>Osmolaridade efetiva</strong> (tonicidade) = 2 × Na + glicose ÷ 18.</p><p><strong>Gap osmolar</strong> = osmolalidade medida − osmolaridade calculada.</p>",
-    "table": [
-      [
-        "Resultado",
-        "Interpretação"
-      ],
-      [
-        "Osmolaridade 275 a 295 mOsm/L",
-        "Faixa normal"
-      ],
-      [
-        "Gap osmolar ≤ 10",
-        "Normal"
-      ],
-      [
-        "Gap osmolar &gt; 10",
-        "Soluto não medido: metanol, etilenoglicol, isopropanol, etanol não dosado, manitol, glicina"
-      ]
-    ],
-    "tips": [
-      "Gap osmolar alto com acidose de ânion gap alto sugere intoxicação por metanol ou etilenoglicol: não espere a confirmação para iniciar o antídoto (fomepizol ou etanol) e discutir hemodiálise.",
-      "Na fase tardia, o álcool já foi metabolizado em ácidos: o gap osmolar cai e o ânion gap sobe. Gap normal não exclui a intoxicação.",
-      "A osmolalidade medida deve ser feita por abaixamento do ponto de congelamento; o método de pressão de vapor não detecta álcoois voláteis.",
-      "A ureia atravessa as membranas livremente: para tonicidade (hiponatremia, estado hiperosmolar), use a osmolaridade efetiva."
-    ],
     "sources": [
       [
         "Kraut JA, Xing SX. Approach to the evaluation of a patient with an increased serum osmolal gap and high-anion-gap metabolic acidosis. Am J Kidney Dis, 2011.",
@@ -170,9 +147,6 @@
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -185,28 +159,165 @@
       "testedAt": "2026-09-25",
       "total": 1,
       "passed": 1,
-      "cases": [
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "2 Na+glicose/18+ureia/6 ou BUN/2,8; etanol/Purssell 2001 /3,7; tonicidade semureia",
+    "implementationVersion": "osmolaridade-serica@native-2026-10-03+0c4e6fe902c3",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/21794966/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Osmolaridade calculada = 2 × Na + glicose ÷ 18 + ureia ÷ 6 (+ etanol ÷ 3,7, se dosado). Com BUN no lugar da ureia, use BUN ÷ 2,8. Osmolaridade efetiva (tonicidade) = 2 × Na + glicose ÷ 18. Gap osmolar = osmolalidade medida − osmolaridade calculada.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "na",
+            "label": "Sódio",
+            "type": "num",
+            "min": 100,
+            "max": 200,
+            "unit": "mEq/L",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "glic",
+            "label": "Glicose",
+            "type": "num",
+            "min": 10,
+            "max": 2000,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "ureia",
+            "label": "Ureia",
+            "type": "num",
+            "min": 5,
+            "max": 500,
+            "unit": "mg/dL",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "etanol",
+            "label": "Etanol sérico",
+            "type": "num",
+            "min": 0,
+            "max": 800,
+            "unit": "mg/dL",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "osm",
+            "label": "Osmolalidade medida",
+            "type": "num",
+            "min": 200,
+            "max": 500,
+            "unit": "mOsm/kg",
+            "optional": true,
+            "options": null
+          }
+        ],
+        "hash": "9092485bfe6b5cac1340d4b665482fbad1bcaff2a09e8fbadec321097f8b97b3"
+      },
+      "sourceEditions": [
         {
-          "label": "Conversões mg/dL: 2×140+180/18+60/6=300",
-          "input": {
-            "na": 140,
-            "glic": 180,
-            "ureia": 60
+          "citation": "Kraut JA, Xing SX. Approach to the evaluation of a patient with an increased serum osmolal gap and high-anion-gap metabolic acidosis. Am J Kidney Dis, 2011.",
+          "url": "https://doi.org/10.1053/j.ajkd.2011.05.018",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Approach to the evaluation of a patient with an increased serum osmolal gap and high-anion-gap metabolic acidosis.",
+            "year": "2011",
+            "firstPublicationDate": "2011-07-27",
+            "doi": "10.1053/j.ajkd.2011.05.018",
+            "pmid": "21794966",
+            "journal": "American journal of kidney diseases : the official journal of the National Kidney Foundation",
+            "authors": "Kraut JA, Xing SX."
           },
-          "expected": {
-            "calc": 300,
-            "efetiva": 290
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/21794966/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "5d5438436acda34e01301280e05dfb1d0e2e34d8a1588e852c6a7228a9a3bf20",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Purssell RA et al. Derivation and validation of a formula to calculate the contribution of ethanol to the osmolal gap. Ann Emerg Med, 2001.",
+          "url": "https://doi.org/10.1067/mem.2001.119455",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Derivation and validation of a formula to calculate the contribution of ethanol to the osmolal gap.",
+            "year": "2001",
+            "firstPublicationDate": "2001-12-01",
+            "doi": "10.1067/mem.2001.119455",
+            "pmid": "11719745",
+            "journal": "Annals of emergency medicine",
+            "authors": "Purssell RA, Pudek M, Brubacher J, Abu-Laban RB."
           },
-          "status": "passed",
-          "failures": []
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/11719745/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "c8f6ac0dd411736224494aca4b75cfe5a9054581eeb2f677f1ed5a0130d0cf21",
+          "matchedBy": "exact-DOI-or-PMID"
         }
-      ]
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-09-25",
+        "total": 1,
+        "passed": 1,
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "0c4e6fe902c37212e0011c1dfa1954e359575287955d51715bac9a41d03e7680"
+    },
+    "limits": "O gap osmolar é um indício, não identificação específica de um álcool. Seu valor depende do estágio de metabolismo, gap basal e outros solutos; cetoacidose, disfunção renal e acidose láctica também podem elevá-lo. Fórmula, unidades e osmolalidade medida devem corresponder à fonte; o resultado isolado não confirma ou exclui intoxicação.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:03.095Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Resumo não contém fórmula de osmolaridade nem coeficiente de etanol de Purssell 2001. Gap normal não foi conferido como exclusão universal de intoxicação."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/osmolaridade-serica/calculator.js",
+    "bytes": 5622,
+    "sha256": "0c4e6fe902c37212e0011c1dfa1954e359575287955d51715bac9a41d03e7680"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "6232708ae2c3118204872e7fdc9716401c7b9262ffaafae60ddd3b3a46057ce0",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 1,
+      "sha256": "6b31e9f31d7e4f8691edf30fa9e7fa46667cebb762a319358bec5dabc3517aec",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 1,
+      "sha256": "6b31e9f31d7e4f8691edf30fa9e7fa46667cebb762a319358bec5dabc3517aec",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

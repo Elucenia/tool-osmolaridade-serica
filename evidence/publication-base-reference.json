@@ -1,0 +1,88 @@
+{
+  "id": "osmolaridade-serica",
+  "repository": "Elucenia/tool-osmolaridade-serica",
+  "branch": "main",
+  "commit": "b759e4a8852a8936ee40d9b40ea6ce909bc403ea",
+  "archiveSha256": "7977a69ce5372ed644368372eedc8a5939b38ec7dcfdfc7ca6efa35bc3d5d92e",
+  "protectedFiles": [
+    {
+      "path": ".gitattributes",
+      "type": "blob",
+      "mode": "100644",
+      "size": 19,
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "type": "blob",
+      "mode": "100644",
+      "size": 279,
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160"
+    },
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "mode": "100644",
+      "size": 42,
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8"
+    },
+    {
+      "path": "AUTHORSHIP.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 3317,
+      "sha": "b58d634ab58b90df0708f0d29eb62f7c936802cb",
+      "sha256": "a083b840630cb3f2d005cc13e9295f9b08f981aa5f937a604c59e4d8296489c2"
+    },
+    {
+      "path": "CITATION.cff",
+      "type": "blob",
+      "mode": "100644",
+      "size": 930,
+      "sha": "9e84d429508bc97551affce07c2e8d3507e92bd5",
+      "sha256": "02e9dcae9f1353df29b52f8a2c8ab28cd4df6a832526f96f452a96efdb893cd4"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1470,
+      "sha": "ab20eefae3fe9d752979a50f59d7f50999be8cc8",
+      "sha256": "fa50ebf28e2ff40f819ae07b388f56e76b4cbe8bfed94479d49d8c31b82af944"
+    },
+    {
+      "path": "LICENSE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 11358,
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "NOTICE",
+      "type": "blob",
+      "mode": "100644",
+      "size": 1644,
+      "sha": "ba078ad190a085757d476dbbdace5a06b7c1a399",
+      "sha256": "c56cbd464ba141c70a23e26e2959b64455d55364997fe3b58e8e5fb4c36ed4f5"
+    },
+    {
+      "path": "SECURITY.md",
+      "type": "blob",
+      "mode": "100644",
+      "size": 894,
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e"
+    }
+  ],
+  "receipt": {
+    "file": "reports/review-20261005-completion/native190-protected-remote-baseline-r1.json",
+    "bytes": 6066154,
+    "sha256": "ec8bac70e5a6eed7fb742c319c4e68344eea5713350fa16b9d9bf48e014a9a88"
+  },
+  "remoteCodeExecuted": false,
+  "freshBranchReadRequiredBeforePublication": true
+}

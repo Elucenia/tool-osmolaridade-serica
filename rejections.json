@@ -1,0 +1,649 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field na",
+    "input": {
+      "glic": 90,
+      "ureia": 30
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field na",
+    "input": {
+      "na": "",
+      "glic": 90,
+      "ureia": 30
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" na",
+    "input": {
+      "na": "NaN",
+      "glic": 90,
+      "ureia": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" na",
+    "input": {
+      "na": "Infinity",
+      "glic": 90,
+      "ureia": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" na",
+    "input": {
+      "na": "1e309",
+      "glic": 90,
+      "ureia": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" na",
+    "input": {
+      "na": "invalid",
+      "glic": 90,
+      "ureia": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} na",
+    "input": {
+      "na": {},
+      "glic": 90,
+      "ureia": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true na",
+    "input": {
+      "na": true,
+      "glic": 90,
+      "ureia": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum na",
+    "input": {
+      "na": 90,
+      "glic": 90,
+      "ureia": 30
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum na",
+    "input": {
+      "na": 220,
+      "glic": 90,
+      "ureia": 30
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "na"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field glic",
+    "input": {
+      "na": 140,
+      "ureia": 30
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "glic"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field glic",
+    "input": {
+      "na": 140,
+      "glic": "",
+      "ureia": 30
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "glic"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" glic",
+    "input": {
+      "na": 140,
+      "glic": "NaN",
+      "ureia": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "glic"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" glic",
+    "input": {
+      "na": 140,
+      "glic": "Infinity",
+      "ureia": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "glic"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" glic",
+    "input": {
+      "na": 140,
+      "glic": "1e309",
+      "ureia": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "glic"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" glic",
+    "input": {
+      "na": 140,
+      "glic": "invalid",
+      "ureia": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "glic"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} glic",
+    "input": {
+      "na": 140,
+      "glic": {},
+      "ureia": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "glic"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true glic",
+    "input": {
+      "na": 140,
+      "glic": true,
+      "ureia": 30
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "glic"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum glic",
+    "input": {
+      "na": 140,
+      "glic": 9,
+      "ureia": 30
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "glic"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum glic",
+    "input": {
+      "na": 140,
+      "glic": 2200,
+      "ureia": 30
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "glic"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field ureia",
+    "input": {
+      "na": 140,
+      "glic": 90
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ureia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field ureia",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "ureia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" ureia",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ureia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" ureia",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ureia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" ureia",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ureia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" ureia",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ureia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} ureia",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ureia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true ureia",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "ureia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum ureia",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 4
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ureia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum ureia",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 550
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "ureia"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" etanol",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "etanol": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "etanol"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" etanol",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "etanol": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "etanol"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" etanol",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "etanol": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "etanol"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" etanol",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "etanol": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "etanol"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} etanol",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "etanol": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "etanol"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true etanol",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "etanol": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "etanol"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum etanol",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "etanol": -1
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "etanol"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum etanol",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "etanol": 880
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "etanol"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"NaN\" osm",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "osm": "NaN"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "osm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"Infinity\" osm",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "osm": "Infinity"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "osm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"1e309\" osm",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "osm": "1e309"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "osm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric \"invalid\" osm",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "osm": "invalid"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "osm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric {} osm",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "osm": {}
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "osm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid numeric true osm",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "osm": true
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "osm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject below documented minimum osm",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "osm": 180
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "osm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject above documented maximum osm",
+    "input": {
+      "na": 140,
+      "glic": 90,
+      "ureia": 30,
+      "osm": 550
+    },
+    "expected": {
+      "code": "OUT_OF_RANGE",
+      "field": "osm"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
