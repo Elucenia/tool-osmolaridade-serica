@@ -87,3 +87,52 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Calculated osmolarity normal (275 to 295 mOsm/L)
+
+| Result details | |
+| --- | --- |
+| Effective osmolarity (tonicity) | 285 mOsm/L |
+
+
+### 2
+
+Calculated osmolarity low (< 275 mOsm/L)
+
+| Result details | |
+| --- | --- |
+| Effective osmolarity (tonicity) | 255 mOsm/L |
+
+
+### 3
+
+Increased osmolal gap (> 10): investigate methanol, ethylene glycol, ethanol not reported, mannitol, or other solutes
+
+| Result details | |
+| --- | --- |
+| Calculated osmolarity | 290 mOsm/L |
+| Osmolal gap (measured − calculated) | 30 mOsm |
+| Effective osmolarity (tonicity) | 285 mOsm/L |
+
+Normal gap does not exclude toxic alcohol intoxication in the late phase, when the alcohol has already been metabolized into acids.
+
+
+### 4
+
+Normal osmolal gap (≤ 10)
+
+| Result details | |
+| --- | --- |
+| Calculated osmolarity | 342 mOsm/L |
+| Osmolal gap (measured − calculated) | -2 mOsm |
+| Effective osmolarity (tonicity) | 286 mOsm/L |
+| Ethanol contribution | 50 mOsm/L |
+
+Normal gap does not exclude toxic alcohol intoxication in the late phase, when the alcohol has already been metabolized into acids.
+

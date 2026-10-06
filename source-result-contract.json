@@ -1,0 +1,292 @@
+{
+  "schema": "elucenia-public-source-result-preservation-v1",
+  "id": "osmolaridade-serica",
+  "source": {
+    "baselineFile": "reports/review-20261005-completion/public-native-output-baseline-r2/baseline.json",
+    "baselineSha256": "e5f274fa5acc74566e1c3d55afb6bb402ad9928337dd77a2945442f5b6c49439",
+    "previousCommit": "cf4552c82bb55bb94339641ad26a6f6cc425c8a0",
+    "oldEngineSha256": "0c4e6fe902c37212e0011c1dfa1954e359575287955d51715bac9a41d03e7680",
+    "currentEngineSha256": "3c5fd0383037cfb20381a411d35bd8f6596ee82a55dc79e27431a95c8e91048f"
+  },
+  "scope": "Existing synthetic inputs and same pinned mathematical-function outputs. Clinical interpretation correctness and professional translation are separate unperformed reviews.",
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "cases": [
+    {
+      "caseIndex": 0,
+      "name": "Na 140, glicose 90, ureia 30: 290 (normal)",
+      "input": {
+        "na": 140,
+        "glic": 90,
+        "ureia": 30
+      },
+      "publicOutput": {
+        "id": "osmolaridade-serica",
+        "main": [
+          "290",
+          "mOsm/L"
+        ],
+        "label": "Osmolaridade sérica calculada",
+        "raw": {
+          "calc": 290,
+          "efetiva": 285
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "calc": 290,
+          "efetiva": 285
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "290",
+          "mOsm/L"
+        ],
+        "label": "Osmolaridade sérica calculada",
+        "level": "low",
+        "verdict": "Osmolaridade calculada normal (275 a 295 mOsm/L)",
+        "rows": [
+          [
+            "Osmolaridade efetiva (tonicidade)",
+            "285 mOsm/L"
+          ]
+        ],
+        "raw": {
+          "calc": 290,
+          "efetiva": 285
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 1,
+      "name": "Hiponatremia: Na 125, glicose 90, ureia 30: 260 (baixa)",
+      "input": {
+        "na": 125,
+        "glic": 90,
+        "ureia": 30
+      },
+      "publicOutput": {
+        "id": "osmolaridade-serica",
+        "main": [
+          "260",
+          "mOsm/L"
+        ],
+        "label": "Osmolaridade sérica calculada",
+        "raw": {
+          "calc": 260,
+          "efetiva": 255
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "calc": 260
+        },
+        "level": "mid",
+        "verdict": "baixa"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "260",
+          "mOsm/L"
+        ],
+        "label": "Osmolaridade sérica calculada",
+        "level": "mid",
+        "verdict": "Osmolaridade calculada baixa (< 275 mOsm/L)",
+        "rows": [
+          [
+            "Osmolaridade efetiva (tonicidade)",
+            "255 mOsm/L"
+          ]
+        ],
+        "raw": {
+          "calc": 260,
+          "efetiva": 255
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows"
+      ]
+    },
+    {
+      "caseIndex": 2,
+      "name": "Medida 320 com calculada 290: gap 30",
+      "input": {
+        "na": 140,
+        "glic": 90,
+        "ureia": 30,
+        "osm": 320
+      },
+      "publicOutput": {
+        "id": "osmolaridade-serica",
+        "main": [
+          "30",
+          "mOsm"
+        ],
+        "label": "Gap osmolar",
+        "raw": {
+          "calc": 290,
+          "efetiva": 285,
+          "gap": 30
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "gap": 30
+        },
+        "level": "high"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "30",
+          "mOsm"
+        ],
+        "label": "Gap osmolar",
+        "level": "high",
+        "verdict": "Gap osmolar aumentado (> 10): pesquisar metanol, etilenoglicol, etanol não informado, manitol ou outros solutos",
+        "rows": [
+          [
+            "Osmolaridade calculada",
+            "290 mOsm/L"
+          ],
+          [
+            "Gap osmolar (medida − calculada)",
+            "30 mOsm"
+          ],
+          [
+            "Osmolaridade efetiva (tonicidade)",
+            "285 mOsm/L"
+          ]
+        ],
+        "note": "Gap normal não exclui intoxicação por álcool tóxico em fase tardia, quando o álcool já foi metabolizado em ácidos.",
+        "raw": {
+          "calc": 290,
+          "efetiva": 285,
+          "gap": 30
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    },
+    {
+      "caseIndex": 3,
+      "name": "Etanol 185 mg/dL explica o gap: calculada 342, medida 340, gap −2",
+      "input": {
+        "na": 140,
+        "glic": 108,
+        "ureia": 36,
+        "etanol": 185,
+        "osm": 340
+      },
+      "publicOutput": {
+        "id": "osmolaridade-serica",
+        "main": [
+          "-2",
+          "mOsm"
+        ],
+        "label": "Gap osmolar",
+        "raw": {
+          "calc": 342,
+          "efetiva": 286,
+          "gap": -2
+        },
+        "clinicalValidation": "not-performed"
+      },
+      "sourceExpected": {
+        "raw": {
+          "calc": 342,
+          "gap": -2
+        },
+        "level": "low"
+      },
+      "inspectedSourceOutput": {
+        "main": [
+          "-2",
+          "mOsm"
+        ],
+        "label": "Gap osmolar",
+        "level": "low",
+        "verdict": "Gap osmolar normal (≤ 10)",
+        "rows": [
+          [
+            "Osmolaridade calculada",
+            "342 mOsm/L"
+          ],
+          [
+            "Gap osmolar (medida − calculada)",
+            "-2 mOsm"
+          ],
+          [
+            "Osmolaridade efetiva (tonicidade)",
+            "286 mOsm/L"
+          ],
+          [
+            "Contribuição do etanol",
+            "50 mOsm/L"
+          ]
+        ],
+        "note": "Gap normal não exclui intoxicação por álcool tóxico em fase tardia, quando o álcool já foi metabolizado em ácidos.",
+        "raw": {
+          "calc": 342,
+          "efetiva": 286,
+          "gap": -2
+        }
+      },
+      "numericEquality": true,
+      "inspectionScope": "Same pinned source function, inspected in memory; not an independent formula/clinical oracle.",
+      "state": "source-transport-comparable",
+      "nonemptySourceFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ],
+      "missingPublicFields": [
+        "verdict",
+        "level",
+        "rows",
+        "note"
+      ]
+    }
+  ]
+}

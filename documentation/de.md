@@ -87,3 +87,52 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Berechnete Osmolarität normal (275 bis 295 mOsm/L)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Effektive Osmolarität (Tonicität) | 285 mOsm/L |
+
+
+### 2
+
+Berechnete Osmolarität niedrig (< 275 mOsm/L)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Effektive Osmolarität (Tonicität) | 255 mOsm/L |
+
+
+### 3
+
+Erhöhte osmolare Lücke (> 10): Methanol, Ethylenglykol, nicht angegebenes Ethanol, Mannitol oder andere Solute abklären
+
+| Ergebnisdetails | |
+| --- | --- |
+| Berechnete Osmolarität | 290 mOsm/L |
+| Osmolare Lücke (gemessen − berechnet) | 30 mOsm |
+| Effektive Osmolarität (Tonicität) | 285 mOsm/L |
+
+Eine normale Lücke schließt eine Vergiftung durch toxischen Alkohol im Spätstadium nicht aus, wenn der Alkohol bereits zu Säuren metabolisiert wurde.
+
+
+### 4
+
+Normale osmolare Lücke (≤ 10)
+
+| Ergebnisdetails | |
+| --- | --- |
+| Berechnete Osmolarität | 342 mOsm/L |
+| Osmolare Lücke (gemessen − berechnet) | -2 mOsm |
+| Effektive Osmolarität (Tonicität) | 286 mOsm/L |
+| Ethanolbeitrag | 50 mOsm/L |
+
+Eine normale Lücke schließt eine Vergiftung durch toxischen Alkohol im Spätstadium nicht aus, wenn der Alkohol bereits zu Säuren metabolisiert wurde.
+

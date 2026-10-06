@@ -87,3 +87,52 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Osmolarità calcolata normale (275 a 295 mOsm/L)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Osmolarità efficace (tonicità) | 285 mOsm/L |
+
+
+### 2
+
+Osmolarità calcolata bassa (< 275 mOsm/L)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Osmolarità efficace (tonicità) | 255 mOsm/L |
+
+
+### 3
+
+Gap osmolare aumentato (> 10): ricercare metanolo, etilenglicole, etanolo non riportato, mannitolo o altri soluti
+
+| Dettagli del risultato | |
+| --- | --- |
+| Osmolarità calcolata | 290 mOsm/L |
+| Gap osmolare (misurata − calcolata) | 30 mOsm |
+| Osmolarità efficace (tonicità) | 285 mOsm/L |
+
+Un gap normale non esclude un’intossicazione da alcol tossico in fase tardiva, quando l’alcol è già stato metabolizzato in acidi.
+
+
+### 4
+
+Gap osmolare normale (≤ 10)
+
+| Dettagli del risultato | |
+| --- | --- |
+| Osmolarità calcolata | 342 mOsm/L |
+| Gap osmolare (misurata − calcolata) | -2 mOsm |
+| Osmolarità efficace (tonicità) | 286 mOsm/L |
+| Contributo dell’etanolo | 50 mOsm/L |
+
+Un gap normale non esclude un’intossicazione da alcol tossico in fase tardiva, quando l’alcol è già stato metabolizzato in acidi.
+

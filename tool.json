@@ -162,7 +162,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "2 Na+glicose/18+ureia/6 ou BUN/2,8; etanol/Purssell 2001 /3,7; tonicidade semureia",
-    "implementationVersion": "osmolaridade-serica@native-2026-10-03+0c4e6fe902c3",
+    "implementationVersion": "osmolaridade-serica@native-2026-10-05+3c5fd0383037",
     "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/21794966/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -282,7 +282,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "0c4e6fe902c37212e0011c1dfa1954e359575287955d51715bac9a41d03e7680"
+      "implementationHash": "3c5fd0383037cfb20381a411d35bd8f6596ee82a55dc79e27431a95c8e91048f",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "osmolaridade-serica@native-2026-10-03+0c4e6fe902c3",
+          "previousImplementationHash": "0c4e6fe902c37212e0011c1dfa1954e359575287955d51715bac9a41d03e7680",
+          "implementationHash": "3c5fd0383037cfb20381a411d35bd8f6596ee82a55dc79e27431a95c8e91048f",
+          "scientificBodySha256": "fa14cab1bc8865d52a13d58a381de09abb50a164ede3102aefe8b113626e7e95",
+          "metadataContractHash": "9092485bfe6b5cac1340d4b665482fbad1bcaff2a09e8fbadec321097f8b97b3",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "O gap osmolar é um indício, não identificação específica de um álcool. Seu valor depende do estágio de metabolismo, gap basal e outros solutos; cetoacidose, disfunção renal e acidose láctica também podem elevá-lo. Fórmula, unidades e osmolalidade medida devem corresponder à fonte; o resultado isolado não confirma ou exclui intoxicação.",
     "sourceLimitEvidence": {
@@ -301,20 +329,20 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/osmolaridade-serica/calculator.js",
-    "bytes": 5622,
-    "sha256": "0c4e6fe902c37212e0011c1dfa1954e359575287955d51715bac9a41d03e7680"
+    "bytes": 5827,
+    "sha256": "3c5fd0383037cfb20381a411d35bd8f6596ee82a55dc79e27431a95c8e91048f"
   },
-  "sourceToolSha256": "6232708ae2c3118204872e7fdc9716401c7b9262ffaafae60ddd3b3a46057ce0",
+  "sourceToolSha256": "6e574f0d58debcbd1dbd57d1ea22568993c1d29feed0df110456c6f0645e0301",
   "omittedFullReferenceBanks": [
     {
       "rows": 1,
       "sha256": "6b31e9f31d7e4f8691edf30fa9e7fa46667cebb762a319358bec5dabc3517aec",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     },
     {
       "rows": 1,
       "sha256": "6b31e9f31d7e4f8691edf30fa9e7fa46667cebb762a319358bec5dabc3517aec",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

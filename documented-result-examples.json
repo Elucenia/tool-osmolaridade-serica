@@ -1,0 +1,2060 @@
+{
+  "id": "osmolaridade-serica",
+  "implementationVersion": "osmolaridade-serica@native-2026-10-05+3c5fd0383037",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Na 140, glicose 90, ureia 30: 290 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolaridade efetiva (tonicidade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Osmolaridade calculada normal (275 a 295 mOsm/L)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hiponatremia: Na 125, glicose 90, ureia 30: 260 (baixa)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolaridade efetiva (tonicidade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "255 mOsm/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Osmolaridade calculada baixa (< 275 mOsm/L)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Medida 320 com calculada 290: gap 30",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolaridade calculada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "290 mOsm/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gap osmolar (medida − calculada)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "30 mOsm",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Osmolaridade efetiva (tonicidade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gap osmolar aumentado (> 10): pesquisar metanol, etilenoglicol, etanol não informado, manitol ou outros solutos",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Gap normal não exclui intoxicação por álcool tóxico em fase tardia, quando o álcool já foi metabolizado em ácidos.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Etanol 185 mg/dL explica o gap: calculada 342, medida 340, gap −2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolaridade calculada",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "342 mOsm/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gap osmolar (medida − calculada)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "-2 mOsm",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Osmolaridade efetiva (tonicidade)",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "286 mOsm/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Contribuição do etanol",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              },
+              "value": {
+                "text": "50 mOsm/L",
+                "locale": "pt-BR",
+                "template": "documented-source"
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gap osmolar normal (≤ 10)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Gap normal não exclui intoxicação por álcool tóxico em fase tardia, quando o álcool já foi metabolizado em ácidos.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Na 140, glicose 90, ureia 30: 290 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Effective osmolarity (tonicity)",
+                "locale": "en",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "en",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Calculated osmolarity normal (275 to 295 mOsm/L)",
+            "locale": "en",
+            "template": "documented-authored-393b17dd9298d6d06b68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hiponatremia: Na 125, glicose 90, ureia 30: 260 (baixa)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Effective osmolarity (tonicity)",
+                "locale": "en",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "255 mOsm/L",
+                "locale": "en",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  255
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Calculated osmolarity low (< 275 mOsm/L)",
+            "locale": "en",
+            "template": "documented-authored-519eeaf21c70babbec01"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Medida 320 com calculada 290: gap 30",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Calculated osmolarity",
+                "locale": "en",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "290 mOsm/L",
+                "locale": "en",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  290
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Osmolal gap (measured − calculated)",
+                "locale": "en",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "30 mOsm",
+                "locale": "en",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Effective osmolarity (tonicity)",
+                "locale": "en",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "en",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Increased osmolal gap (> 10): investigate methanol, ethylene glycol, ethanol not reported, mannitol, or other solutes",
+            "locale": "en",
+            "template": "documented-authored-eb1915c56fe01ed89e8f"
+          },
+          "note": {
+            "text": "Normal gap does not exclude toxic alcohol intoxication in the late phase, when the alcohol has already been metabolized into acids.",
+            "locale": "en",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Etanol 185 mg/dL explica o gap: calculada 342, medida 340, gap −2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Calculated osmolarity",
+                "locale": "en",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "342 mOsm/L",
+                "locale": "en",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  342
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Osmolal gap (measured − calculated)",
+                "locale": "en",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "-2 mOsm",
+                "locale": "en",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  -2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Effective osmolarity (tonicity)",
+                "locale": "en",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "286 mOsm/L",
+                "locale": "en",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  286
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Ethanol contribution",
+                "locale": "en",
+                "template": "documented-authored-58e4c38ca70a51950291"
+              },
+              "value": {
+                "text": "50 mOsm/L",
+                "locale": "en",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Normal osmolal gap (≤ 10)",
+            "locale": "en",
+            "template": "documented-authored-60313af1c689c541bf3c"
+          },
+          "note": {
+            "text": "Normal gap does not exclude toxic alcohol intoxication in the late phase, when the alcohol has already been metabolized into acids.",
+            "locale": "en",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Na 140, glicose 90, ureia 30: 290 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolaridad efectiva (tonicidad)",
+                "locale": "es",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "es",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Osmolaridad calculada normal (275 a 295 mOsm/L)",
+            "locale": "es",
+            "template": "documented-authored-393b17dd9298d6d06b68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hiponatremia: Na 125, glicose 90, ureia 30: 260 (baixa)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolaridad efectiva (tonicidad)",
+                "locale": "es",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "255 mOsm/L",
+                "locale": "es",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  255
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Osmolaridad calculada baja (< 275 mOsm/L)",
+            "locale": "es",
+            "template": "documented-authored-519eeaf21c70babbec01"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Medida 320 com calculada 290: gap 30",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolaridad calculada",
+                "locale": "es",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "290 mOsm/L",
+                "locale": "es",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  290
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gap osmolar (medida − calculada)",
+                "locale": "es",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "30 mOsm",
+                "locale": "es",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Osmolaridad efectiva (tonicidad)",
+                "locale": "es",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "es",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gap osmolar aumentado (> 10): investigar metanol, etilenglicol, etanol no informado, manitol u otros solutos",
+            "locale": "es",
+            "template": "documented-authored-eb1915c56fe01ed89e8f"
+          },
+          "note": {
+            "text": "Un gap normal no excluye la intoxicación por alcohol tóxico en fase tardía, cuando el alcohol ya ha sido metabolizado en ácidos.",
+            "locale": "es",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Etanol 185 mg/dL explica o gap: calculada 342, medida 340, gap −2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolaridad calculada",
+                "locale": "es",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "342 mOsm/L",
+                "locale": "es",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  342
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gap osmolar (medida − calculada)",
+                "locale": "es",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "-2 mOsm",
+                "locale": "es",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  -2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Osmolaridad efectiva (tonicidad)",
+                "locale": "es",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "286 mOsm/L",
+                "locale": "es",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  286
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Contribución del etanol",
+                "locale": "es",
+                "template": "documented-authored-58e4c38ca70a51950291"
+              },
+              "value": {
+                "text": "50 mOsm/L",
+                "locale": "es",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gap osmolar normal (≤ 10)",
+            "locale": "es",
+            "template": "documented-authored-60313af1c689c541bf3c"
+          },
+          "note": {
+            "text": "Un gap normal no excluye la intoxicación por alcohol tóxico en fase tardía, cuando el alcohol ya ha sido metabolizado en ácidos.",
+            "locale": "es",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Na 140, glicose 90, ureia 30: 290 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolarité effective (tonicité)",
+                "locale": "fr",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "fr",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Osmolarité calculée normale (275 à 295 mOsm/L)",
+            "locale": "fr",
+            "template": "documented-authored-393b17dd9298d6d06b68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hiponatremia: Na 125, glicose 90, ureia 30: 260 (baixa)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolarité effective (tonicité)",
+                "locale": "fr",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "255 mOsm/L",
+                "locale": "fr",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  255
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Osmolarité calculée basse (< 275 mOsm/L)",
+            "locale": "fr",
+            "template": "documented-authored-519eeaf21c70babbec01"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Medida 320 com calculada 290: gap 30",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolarité calculée",
+                "locale": "fr",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "290 mOsm/L",
+                "locale": "fr",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  290
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Écart osmolal (mesuré − calculé)",
+                "locale": "fr",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "30 mOsm",
+                "locale": "fr",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Osmolarité effective (tonicité)",
+                "locale": "fr",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "fr",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Écart osmolal augmenté (> 10) : rechercher du méthanol, de l’éthylène glycol, de l’éthanol non signalé, du mannitol ou d’autres solutés",
+            "locale": "fr",
+            "template": "documented-authored-eb1915c56fe01ed89e8f"
+          },
+          "note": {
+            "text": "Un écart normal n’exclut pas une intoxication par alcool toxique à un stade tardif, lorsque l’alcool a déjà été métabolisé en acides.",
+            "locale": "fr",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Etanol 185 mg/dL explica o gap: calculada 342, medida 340, gap −2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolarité calculée",
+                "locale": "fr",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "342 mOsm/L",
+                "locale": "fr",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  342
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Écart osmolal (mesuré − calculé)",
+                "locale": "fr",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "-2 mOsm",
+                "locale": "fr",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  -2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Osmolarité effective (tonicité)",
+                "locale": "fr",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "286 mOsm/L",
+                "locale": "fr",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  286
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Contribution de l’éthanol",
+                "locale": "fr",
+                "template": "documented-authored-58e4c38ca70a51950291"
+              },
+              "value": {
+                "text": "50 mOsm/L",
+                "locale": "fr",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Écart osmolal normal (≤ 10)",
+            "locale": "fr",
+            "template": "documented-authored-60313af1c689c541bf3c"
+          },
+          "note": {
+            "text": "Un écart normal n’exclut pas une intoxication par alcool toxique à un stade tardif, lorsque l’alcool a déjà été métabolisé en acides.",
+            "locale": "fr",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Na 140, glicose 90, ureia 30: 290 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Effektive Osmolarität (Tonicität)",
+                "locale": "de",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "de",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Berechnete Osmolarität normal (275 bis 295 mOsm/L)",
+            "locale": "de",
+            "template": "documented-authored-393b17dd9298d6d06b68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hiponatremia: Na 125, glicose 90, ureia 30: 260 (baixa)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Effektive Osmolarität (Tonicität)",
+                "locale": "de",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "255 mOsm/L",
+                "locale": "de",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  255
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Berechnete Osmolarität niedrig (< 275 mOsm/L)",
+            "locale": "de",
+            "template": "documented-authored-519eeaf21c70babbec01"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Medida 320 com calculada 290: gap 30",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Berechnete Osmolarität",
+                "locale": "de",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "290 mOsm/L",
+                "locale": "de",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  290
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Osmolare Lücke (gemessen − berechnet)",
+                "locale": "de",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "30 mOsm",
+                "locale": "de",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Effektive Osmolarität (Tonicität)",
+                "locale": "de",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "de",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Erhöhte osmolare Lücke (> 10): Methanol, Ethylenglykol, nicht angegebenes Ethanol, Mannitol oder andere Solute abklären",
+            "locale": "de",
+            "template": "documented-authored-eb1915c56fe01ed89e8f"
+          },
+          "note": {
+            "text": "Eine normale Lücke schließt eine Vergiftung durch toxischen Alkohol im Spätstadium nicht aus, wenn der Alkohol bereits zu Säuren metabolisiert wurde.",
+            "locale": "de",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Etanol 185 mg/dL explica o gap: calculada 342, medida 340, gap −2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Berechnete Osmolarität",
+                "locale": "de",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "342 mOsm/L",
+                "locale": "de",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  342
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Osmolare Lücke (gemessen − berechnet)",
+                "locale": "de",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "-2 mOsm",
+                "locale": "de",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  -2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Effektive Osmolarität (Tonicität)",
+                "locale": "de",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "286 mOsm/L",
+                "locale": "de",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  286
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Ethanolbeitrag",
+                "locale": "de",
+                "template": "documented-authored-58e4c38ca70a51950291"
+              },
+              "value": {
+                "text": "50 mOsm/L",
+                "locale": "de",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Normale osmolare Lücke (≤ 10)",
+            "locale": "de",
+            "template": "documented-authored-60313af1c689c541bf3c"
+          },
+          "note": {
+            "text": "Eine normale Lücke schließt eine Vergiftung durch toxischen Alkohol im Spätstadium nicht aus, wenn der Alkohol bereits zu Säuren metabolisiert wurde.",
+            "locale": "de",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Na 140, glicose 90, ureia 30: 290 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolarità efficace (tonicità)",
+                "locale": "it",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "it",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Osmolarità calcolata normale (275 a 295 mOsm/L)",
+            "locale": "it",
+            "template": "documented-authored-393b17dd9298d6d06b68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hiponatremia: Na 125, glicose 90, ureia 30: 260 (baixa)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolarità efficace (tonicità)",
+                "locale": "it",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "255 mOsm/L",
+                "locale": "it",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  255
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Osmolarità calcolata bassa (< 275 mOsm/L)",
+            "locale": "it",
+            "template": "documented-authored-519eeaf21c70babbec01"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Medida 320 com calculada 290: gap 30",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolarità calcolata",
+                "locale": "it",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "290 mOsm/L",
+                "locale": "it",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  290
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gap osmolare (misurata − calcolata)",
+                "locale": "it",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "30 mOsm",
+                "locale": "it",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Osmolarità efficace (tonicità)",
+                "locale": "it",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "it",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gap osmolare aumentato (> 10): ricercare metanolo, etilenglicole, etanolo non riportato, mannitolo o altri soluti",
+            "locale": "it",
+            "template": "documented-authored-eb1915c56fe01ed89e8f"
+          },
+          "note": {
+            "text": "Un gap normale non esclude un’intossicazione da alcol tossico in fase tardiva, quando l’alcol è già stato metabolizzato in acidi.",
+            "locale": "it",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Etanol 185 mg/dL explica o gap: calculada 342, medida 340, gap −2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "Osmolarità calcolata",
+                "locale": "it",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "342 mOsm/L",
+                "locale": "it",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  342
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "Gap osmolare (misurata − calcolata)",
+                "locale": "it",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "-2 mOsm",
+                "locale": "it",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  -2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "Osmolarità efficace (tonicità)",
+                "locale": "it",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "286 mOsm/L",
+                "locale": "it",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  286
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "Contributo dell’etanolo",
+                "locale": "it",
+                "template": "documented-authored-58e4c38ca70a51950291"
+              },
+              "value": {
+                "text": "50 mOsm/L",
+                "locale": "it",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "Gap osmolare normale (≤ 10)",
+            "locale": "it",
+            "template": "documented-authored-60313af1c689c541bf3c"
+          },
+          "note": {
+            "text": "Un gap normale non esclude un’intossicazione da alcol tossico in fase tardiva, quando l’alcol è già stato metabolizzato in acidi.",
+            "locale": "it",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Na 140, glicose 90, ureia 30: 290 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الأسمولية الفعالة (التوترية)",
+                "locale": "ar",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "٢٨٥ mOsm/L",
+                "locale": "ar",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الأسمولية المحسوبة طبيعية (275 إلى 295 mOsm/L)",
+            "locale": "ar",
+            "template": "documented-authored-393b17dd9298d6d06b68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hiponatremia: Na 125, glicose 90, ureia 30: 260 (baixa)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الأسمولية الفعالة (التوترية)",
+                "locale": "ar",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "٢٥٥ mOsm/L",
+                "locale": "ar",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  255
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "الأسمولية المحسوبة منخفضة (< 275 mOsm/L)",
+            "locale": "ar",
+            "template": "documented-authored-519eeaf21c70babbec01"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Medida 320 com calculada 290: gap 30",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الأسمولية المحسوبة",
+                "locale": "ar",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "٢٩٠ mOsm/L",
+                "locale": "ar",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  290
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الفجوة الأسمولية (المقاسة − المحسوبة)",
+                "locale": "ar",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "٣٠ mOsm",
+                "locale": "ar",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الأسمولية الفعالة (التوترية)",
+                "locale": "ar",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "٢٨٥ mOsm/L",
+                "locale": "ar",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "فجوة أسمولية مرتفعة (> 10): تحرَّ عن الميثانول، والإيثيلين غليكول، والإيثانول غير المُبلَّغ عنه، والمنايتول أو مذابات أخرى",
+            "locale": "ar",
+            "template": "documented-authored-eb1915c56fe01ed89e8f"
+          },
+          "note": {
+            "text": "الفجوة الطبيعية لا تستبعد تسمم الكحول السام في المرحلة المتأخرة، عندما يكون الكحول قد استُقلب بالفعل إلى أحماض.",
+            "locale": "ar",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Etanol 185 mg/dL explica o gap: calculada 342, medida 340, gap −2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "الأسمولية المحسوبة",
+                "locale": "ar",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "٣٤٢ mOsm/L",
+                "locale": "ar",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  342
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "الفجوة الأسمولية (المقاسة − المحسوبة)",
+                "locale": "ar",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "؜-٢ mOsm",
+                "locale": "ar",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  -2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "الأسمولية الفعالة (التوترية)",
+                "locale": "ar",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "٢٨٦ mOsm/L",
+                "locale": "ar",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  286
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "مساهمة الإيثانول",
+                "locale": "ar",
+                "template": "documented-authored-58e4c38ca70a51950291"
+              },
+              "value": {
+                "text": "٥٠ mOsm/L",
+                "locale": "ar",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "فجوة أسمولية طبيعية (≤ 10)",
+            "locale": "ar",
+            "template": "documented-authored-60313af1c689c541bf3c"
+          },
+          "note": {
+            "text": "الفجوة الطبيعية لا تستبعد تسمم الكحول السام في المرحلة المتأخرة، عندما يكون الكحول قد استُقلب بالفعل إلى أحماض.",
+            "locale": "ar",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Na 140, glicose 90, ureia 30: 290 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "有效渗透压（张力）",
+                "locale": "zh",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "zh",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "计算渗透压正常（275 至 295 mOsm/L）",
+            "locale": "zh",
+            "template": "documented-authored-393b17dd9298d6d06b68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hiponatremia: Na 125, glicose 90, ureia 30: 260 (baixa)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "有效渗透压（张力）",
+                "locale": "zh",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "255 mOsm/L",
+                "locale": "zh",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  255
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "计算渗透压低（< 275 mOsm/L）",
+            "locale": "zh",
+            "template": "documented-authored-519eeaf21c70babbec01"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Medida 320 com calculada 290: gap 30",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "计算渗透压",
+                "locale": "zh",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "290 mOsm/L",
+                "locale": "zh",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  290
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "渗透间隙（实测 − 计算）",
+                "locale": "zh",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "30 mOsm",
+                "locale": "zh",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "有效渗透压（张力）",
+                "locale": "zh",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "zh",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "渗透间隙增高（> 10）：检查甲醇、乙二醇、未报告的乙醇、甘露醇或其他溶质",
+            "locale": "zh",
+            "template": "documented-authored-eb1915c56fe01ed89e8f"
+          },
+          "note": {
+            "text": "正常间隙并不能排除晚期毒性酒精中毒，此时酒精已代谢为酸。",
+            "locale": "zh",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Etanol 185 mg/dL explica o gap: calculada 342, medida 340, gap −2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "计算渗透压",
+                "locale": "zh",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "342 mOsm/L",
+                "locale": "zh",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  342
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "渗透间隙（实测 − 计算）",
+                "locale": "zh",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "-2 mOsm",
+                "locale": "zh",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  -2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "有效渗透压（张力）",
+                "locale": "zh",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "286 mOsm/L",
+                "locale": "zh",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  286
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "乙醇贡献",
+                "locale": "zh",
+                "template": "documented-authored-58e4c38ca70a51950291"
+              },
+              "value": {
+                "text": "50 mOsm/L",
+                "locale": "zh",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "正常渗透间隙（≤ 10）",
+            "locale": "zh",
+            "template": "documented-authored-60313af1c689c541bf3c"
+          },
+          "note": {
+            "text": "正常间隙并不能排除晚期毒性酒精中毒，此时酒精已代谢为酸。",
+            "locale": "zh",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Na 140, glicose 90, ureia 30: 290 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "有効浸透圧（張度）",
+                "locale": "ja",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "ja",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "計算浸透圧は正常（275～295 mOsm/L）",
+            "locale": "ja",
+            "template": "documented-authored-393b17dd9298d6d06b68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hiponatremia: Na 125, glicose 90, ureia 30: 260 (baixa)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "有効浸透圧（張度）",
+                "locale": "ja",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "255 mOsm/L",
+                "locale": "ja",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  255
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "計算浸透圧が低い（< 275 mOsm/L）",
+            "locale": "ja",
+            "template": "documented-authored-519eeaf21c70babbec01"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Medida 320 com calculada 290: gap 30",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "計算浸透圧",
+                "locale": "ja",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "290 mOsm/L",
+                "locale": "ja",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  290
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "浸透ギャップ（測定値 − 計算値）",
+                "locale": "ja",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "30 mOsm",
+                "locale": "ja",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "有効浸透圧（張度）",
+                "locale": "ja",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "ja",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "浸透ギャップ増加（> 10）：メタノール、エチレングリコール、未記載のエタノール、マンニトール、またはその他の溶質を調べる",
+            "locale": "ja",
+            "template": "documented-authored-eb1915c56fe01ed89e8f"
+          },
+          "note": {
+            "text": "正常なギャップでも、アルコールがすでに酸へ代謝されている遅発期の有毒アルコール中毒を否定できない。",
+            "locale": "ja",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Etanol 185 mg/dL explica o gap: calculada 342, medida 340, gap −2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "計算浸透圧",
+                "locale": "ja",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "342 mOsm/L",
+                "locale": "ja",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  342
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "浸透ギャップ（測定値 − 計算値）",
+                "locale": "ja",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "-2 mOsm",
+                "locale": "ja",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  -2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "有効浸透圧（張度）",
+                "locale": "ja",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "286 mOsm/L",
+                "locale": "ja",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  286
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "エタノールの寄与",
+                "locale": "ja",
+                "template": "documented-authored-58e4c38ca70a51950291"
+              },
+              "value": {
+                "text": "50 mOsm/L",
+                "locale": "ja",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "正常浸透ギャップ（≤ 10）",
+            "locale": "ja",
+            "template": "documented-authored-60313af1c689c541bf3c"
+          },
+          "note": {
+            "text": "正常なギャップでも、アルコールがすでに酸へ代謝されている遅発期の有毒アルコール中毒を否定できない。",
+            "locale": "ja",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "low"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Na 140, glicose 90, ureia 30: 290 (normal)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रभावी ऑस्मोलैरिटी (टॉनिसिटी)",
+                "locale": "hi",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "hi",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "गणना की गई ऑस्मोलैरिटी सामान्य (275 से 295 mOsm/L)",
+            "locale": "hi",
+            "template": "documented-authored-393b17dd9298d6d06b68"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Hiponatremia: Na 125, glicose 90, ureia 30: 260 (baixa)",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "प्रभावी ऑस्मोलैरिटी (टॉनिसिटी)",
+                "locale": "hi",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "255 mOsm/L",
+                "locale": "hi",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  255
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "गणना की गई ऑस्मोलैरिटी कम (< 275 mOsm/L)",
+            "locale": "hi",
+            "template": "documented-authored-519eeaf21c70babbec01"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Medida 320 com calculada 290: gap 30",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "गणना की गई ऑस्मोलैरिटी",
+                "locale": "hi",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "290 mOsm/L",
+                "locale": "hi",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  290
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ऑस्मोलल गैप (मापा गया − गणना किया गया)",
+                "locale": "hi",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "30 mOsm",
+                "locale": "hi",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  30
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "प्रभावी ऑस्मोलैरिटी (टॉनिसिटी)",
+                "locale": "hi",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "285 mOsm/L",
+                "locale": "hi",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  285
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "ऑस्मोलल गैप बढ़ा हुआ (> 10): मेथनॉल, एथिलीन ग्लाइकॉल, रिपोर्ट न किए गए एथेनॉल, मैनिटॉल या अन्य घुलित पदार्थों की जाँच करें",
+            "locale": "hi",
+            "template": "documented-authored-eb1915c56fe01ed89e8f"
+          },
+          "note": {
+            "text": "सामान्य गैप देर के चरण में विषाक्त अल्कोहल विषाक्तता को बाहर नहीं करता, जब अल्कोहल पहले ही अम्लों में उपापचयित हो चुका हो।",
+            "locale": "hi",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "high"
+        }
+      },
+      {
+        "name": "Etanol 185 mg/dL explica o gap: calculada 342, medida 340, gap −2",
+        "output": {
+          "rows": [
+            {
+              "key": "documented-0",
+              "label": {
+                "text": "गणना की गई ऑस्मोलैरिटी",
+                "locale": "hi",
+                "template": "documented-authored-df53b41c9f3a3f567c48"
+              },
+              "value": {
+                "text": "342 mOsm/L",
+                "locale": "hi",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  342
+                ]
+              }
+            },
+            {
+              "key": "documented-1",
+              "label": {
+                "text": "ऑस्मोलल गैप (मापा गया − गणना किया गया)",
+                "locale": "hi",
+                "template": "documented-authored-7d6e41e314c67ab87398"
+              },
+              "value": {
+                "text": "-2 mOsm",
+                "locale": "hi",
+                "template": "documented-authored-1b63a973f30573f06f06",
+                "sourceNumbers": [
+                  -2
+                ]
+              }
+            },
+            {
+              "key": "documented-2",
+              "label": {
+                "text": "प्रभावी ऑस्मोलैरिटी (टॉनिसिटी)",
+                "locale": "hi",
+                "template": "documented-authored-bc2deb6fb9a467d16d0d"
+              },
+              "value": {
+                "text": "286 mOsm/L",
+                "locale": "hi",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  286
+                ]
+              }
+            },
+            {
+              "key": "documented-3",
+              "label": {
+                "text": "एथेनॉल का योगदान",
+                "locale": "hi",
+                "template": "documented-authored-58e4c38ca70a51950291"
+              },
+              "value": {
+                "text": "50 mOsm/L",
+                "locale": "hi",
+                "template": "documented-authored-b724e2becadd2a1f18ac",
+                "sourceNumbers": [
+                  50
+                ]
+              }
+            }
+          ],
+          "verdict": {
+            "text": "सामान्य ऑस्मोलल गैप (≤ 10)",
+            "locale": "hi",
+            "template": "documented-authored-60313af1c689c541bf3c"
+          },
+          "note": {
+            "text": "सामान्य गैप देर के चरण में विषाक्त अल्कोहल विषाक्तता को बाहर नहीं करता, जब अल्कोहल पहले ही अम्लों में उपापचयित हो चुका हो।",
+            "locale": "hi",
+            "template": "documented-authored-3b9ec0afa2ff1fc02ee9"
+          },
+          "level": "low"
+        }
+      }
+    ]
+  }
+}

@@ -87,3 +87,52 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Osmolarité calculée normale (275 à 295 mOsm/L)
+
+| Détails du résultat | |
+| --- | --- |
+| Osmolarité effective (tonicité) | 285 mOsm/L |
+
+
+### 2
+
+Osmolarité calculée basse (< 275 mOsm/L)
+
+| Détails du résultat | |
+| --- | --- |
+| Osmolarité effective (tonicité) | 255 mOsm/L |
+
+
+### 3
+
+Écart osmolal augmenté (> 10) : rechercher du méthanol, de l’éthylène glycol, de l’éthanol non signalé, du mannitol ou d’autres solutés
+
+| Détails du résultat | |
+| --- | --- |
+| Osmolarité calculée | 290 mOsm/L |
+| Écart osmolal (mesuré − calculé) | 30 mOsm |
+| Osmolarité effective (tonicité) | 285 mOsm/L |
+
+Un écart normal n’exclut pas une intoxication par alcool toxique à un stade tardif, lorsque l’alcool a déjà été métabolisé en acides.
+
+
+### 4
+
+Écart osmolal normal (≤ 10)
+
+| Détails du résultat | |
+| --- | --- |
+| Osmolarité calculée | 342 mOsm/L |
+| Écart osmolal (mesuré − calculé) | -2 mOsm |
+| Osmolarité effective (tonicité) | 286 mOsm/L |
+| Contribution de l’éthanol | 50 mOsm/L |
+
+Un écart normal n’exclut pas une intoxication par alcool toxique à un stade tardif, lorsque l’alcool a déjà été métabolisé en acides.
+
